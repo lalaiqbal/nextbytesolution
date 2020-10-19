@@ -1,0 +1,37 @@
+<header >
+ 
+        <div class='main'>
+         <ul>
+            
+             <li>
+                 <button style="color:red;background-color:white;font-weight: bold;font-size: large;">Products</button>
+             </li>
+             <li>
+                 <button (click)='logOut()'>Log out</button>
+             </li>
+         </ul>
+        </div>
+        <div>
+            <h1>
+                {{type}}
+            </h1>
+        </div>
+     
+ 
+</header>
+<body>
+    <div class='card' *ngIf='flag' >
+        <div *ngFor='let items of dbData'>
+            
+            <app-cards [message]='type' [image]='items.image' [discription]='items.description' [id]='items.id' ></app-cards>
+        </div>
+        
+        
+       
+    </div>
+    <div *ngIf='adminFlag'>
+        <button class="add" (click)='nacigateToAdd()' >
+           ADD 
+        </button>
+    </div>
+</body>

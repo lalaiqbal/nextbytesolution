@@ -1,0 +1,33 @@
+
+<div class='main'>
+    <p
+    class='war'
+    >{{fileTOBIg}}</p>
+<input 
+    class='input'
+
+type="file"  (change)='onFileSelected($event)'/>
+    <img 
+        style="border-top-left-radius: 50px;border-top-right-radius: 50px;"
+    
+    [src]='urlForImage'
+    height="400"
+    width="600"
+    />
+    <br>
+        <div  >
+            <textarea  style='height: 70px; width: 560px;resize: none;margin-left: 15px;' #des> {{dbData.description}}</textarea>
+                
+       
+        </div>
+    
+</div>
+<div>
+    <button (click)='savingButton(des.value)'>
+        Save
+    </button>
+    <button (click)='delItem()'>
+        Del
+    </button>
+</div>
+

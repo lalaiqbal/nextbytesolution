@@ -1,0 +1,22 @@
+
+<div class='main'>
+    <img 
+        style="border-top-left-radius: 50px;border-top-right-radius: 50px;"
+    
+    [src]='image'
+    height="400"
+    width="600"
+    />
+    <br>
+        <div  >
+            <p>
+                {{discription}}
+            </p>
+           <div *ngIf='flag'>
+            <button (click)='onEdit()'>
+                Edit
+            </button>
+           </div>
+        </div>
+    
+</div>

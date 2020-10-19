@@ -1,0 +1,23 @@
+
+<body>
+    <div class="main">
+      <h3>
+        Please enter your login
+      </h3>
+      
+      
+      <input type="email" #email placeholder="something@domain.com" />
+      <br>
+      <input type="password" placeholder="password" #pass/>
+      <br>
+      <div style="width:100%">
+        <div style="margin-left: auto;" #forspace></div>
+        <button  (click)='navigate(email.value,pass.value)'   >Login</button>
+        <div style="margin-left: auto;" #forspace2></div>
+      </div>
+  
+    </div>
+    
+    
+  
+  </body>

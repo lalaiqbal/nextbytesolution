@@ -1,0 +1,31 @@
+<div class='main'>
+<h6 style='color:rgb(250, 0, 0)'>{{fileTOBIg}}</h6>
+    <h2>
+        Add a picture
+    </h2>
+    <div>
+        
+        <input type="file"  (change)='onFileSelected($event)'/>
+          
+        <img 
+        
+    
+    [src]='urlForImage'
+    #img
+    height="150"
+    width="200"
+    />
+
+    
+       
+        <div>
+            <textarea 
+            ajdust
+            style='height: 100px; width: 250px;resize: none;' #des (keydown)='keyPressIngBox(des.value)'></textarea>
+        </div>
+        <button (click)='onPress()'>
+            click to add
+        </button>
+     
+    </div>
+</div>

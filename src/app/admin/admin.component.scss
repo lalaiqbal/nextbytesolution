@@ -1,0 +1,61 @@
+header{
+    background-color: red;
+    height: 80px;
+    padding: 5px;
+}
+div{
+    padding: 0px;
+}
+ul{
+    float: right;
+}
+ul li{
+    display: inline;
+}
+ul li button{
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 64px;
+    width: 100px;
+    border: 2px solid rgba($color: #ffffff, $alpha: 1);
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .1s;
+}
+ul li button  :hover{
+    background-color: white;    
+}
+div h1{
+    font-size: 30px;
+    font-style: italic;
+
+}
+div.card{
+    align-content: space-between;
+    display: flex;
+  flex-wrap: wrap;
+
+  
+  width: 100%;
+}
+button.add{
+    position: fixed;
+    top: 80%;
+    left: 93%;
+    box-shadow: 1px 3px 9px .5px rgba($color: #010101, $alpha: .65);
+    
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    color:rgba($color: #FFFFFF, $alpha: 1.0);
+    background-color: rgba($color: #a80000, $alpha: 1.0);
+    border:0px;
+    font-size: large;
+    transition: .6s;
+}
+button.add:hover{
+    height: 80px;
+    width: 80px;
+    background-color: rgba($color: #FF0000, $alpha: 1.0);
+
+}
